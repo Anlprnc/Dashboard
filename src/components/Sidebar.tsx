@@ -1,14 +1,12 @@
 'use client';
-import React, { useState } from 'react';
+import React from 'react';
 import { IoCalendar } from 'react-icons/io5';
 import { FaFile } from 'react-icons/fa6';
 import { PiBuildingsFill } from 'react-icons/pi';
 import { MdDashboard } from 'react-icons/md';
 
-const Sidebar = () => {
-  const [activeIcon, setActiveIcon] = useState('dashboard');
-
-  const handleClick = (icon: any) => {
+const Sidebar = ({ activeIcon, setActiveIcon }: any) => {
+  const handleClick = (icon: string) => {
     setActiveIcon(icon);
   };
 
