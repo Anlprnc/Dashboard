@@ -8,7 +8,7 @@ export default function Home() {
   const [activeIcon, setActiveIcon] = useState('dashboard');
 
   return (
-    <div>
+    <div className='bg-teal-50'>
       <Navbar />
       <div className='flex'>
         <Sidebar activeIcon={activeIcon} setActiveIcon={setActiveIcon} />
