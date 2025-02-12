@@ -6,7 +6,7 @@ import { CiSearch } from 'react-icons/ci';
 
 const Navbar = () => {
   return (
-    <nav className='w-full bg-gradient-to-r from-teal-50 from-25% to-gray-100 p-3 px-8 flex items-center justify-between'>
+    <nav className='w-full bg-gradient-to-r from-teal-50 from-25% to-gray-100 p-2 px-8 flex items-center justify-between'>
       <div className='flex items-center gap-10'>
         <div className='font-medium text-2xl'>Carbon</div>
         <div className='hidden md:flex items-center relative'>
