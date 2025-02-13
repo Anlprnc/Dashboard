@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { CiSearch } from 'react-icons/ci';
 import { SlArrowDown } from 'react-icons/sl';
 import EventsActivation from './EventsActivation';
+import EventsCards from './EventsCards';
 
 const Events = () => {
   const buttonItems = ['Project operations event', 'Verification events'];
@@ -32,6 +33,7 @@ const Events = () => {
           ))}
         </div>
         <EventsActivation />
+        <EventsCards />
       </div>
       <div className='border-l border-gray-300'>2</div>
     </div>
