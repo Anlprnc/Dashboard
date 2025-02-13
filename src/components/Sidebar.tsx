@@ -14,10 +14,10 @@ const Sidebar = ({ activeIcon, setActiveIcon }: any) => {
     <div className='flex items-start w-10 md:w-14 h-screen bg-teal-600 text-white'>
       <div className='flex flex-col justify-center items-center gap-8 w-full pt-8'>
         {[
-          { icon: <MdDashboard className='size-5 md:size-5' />, name: 'dashboard' },
-          { icon: <IoCalendar className='size-5 md:size-5' />, name: 'calendar' },
-          { icon: <FaFile className='size-5 md:size-5' />, name: 'file' },
-          { icon: <PiBuildingsFill className='size-5 md:size-5' />, name: 'buildings' },
+          { icon: <MdDashboard className='size-4 md:size-5' />, name: 'dashboard' },
+          { icon: <IoCalendar className='size-4 md:size-5' />, name: 'calendar' },
+          { icon: <FaFile className='size-4 md:size-5' />, name: 'file' },
+          { icon: <PiBuildingsFill className='size-4 md:size-5' />, name: 'buildings' },
         ].map(({ icon, name }) => (
           <span
             key={name}

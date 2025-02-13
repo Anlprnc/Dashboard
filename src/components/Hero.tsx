@@ -27,7 +27,7 @@ const Hero = ({ activeIcon }: any) => {
   };
 
   return (
-    <div className='px-4 md:px-8 w-full relative'>
+    <div className='relative'>
       <div className='flex items-center absolute px-4 top-6 text-gray-100 text-sm z-10 gap-2'>
         <span>{iconMap[activeIcon] || ''}</span> {title[activeIcon] || 'Dashboard'}
       </div>

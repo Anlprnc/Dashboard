@@ -1,19 +1,13 @@
 'use client';
 import React, { useState } from 'react';
 import Hero from '@/components/Hero';
-import Navbar from '@/components/Navbar';
-import Sidebar from '@/components/Sidebar';
+import DashboardPage from './Dashboard/page';
 
-export default function Home() {
-  const [activeIcon, setActiveIcon] = useState('dashboard');
-
+export default function Home({ activeIcon }: { activeIcon: string }) {
   return (
-    <div className='bg-teal-50'>
-      <Navbar />
-      <div className='flex'>
-        <Sidebar activeIcon={activeIcon} setActiveIcon={setActiveIcon} />
-        <Hero activeIcon={activeIcon} />
-      </div>
+    <div className='bg-teal-50 px-4 md:px-8 h-screen'>
+      <Hero activeIcon={activeIcon} />
+      <DashboardPage />
     </div>
   );
 }
