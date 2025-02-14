@@ -8,7 +8,6 @@ import EventsCalendar from './EventsCalendar';
 import { HiOutlineDotsVertical } from 'react-icons/hi';
 import EventsMembers from './EventsMembers';
 import EventsDescription from './EventsDescription';
-import { Table } from '@/components/ui/table';
 import EventsAttachments from './EventsAttachments';
 
 const Events = () => {
@@ -16,7 +15,7 @@ const Events = () => {
   const [activeTab, setActiveTab] = useState(buttonItems[0]);
 
   return (
-    <div className='grid grid-cols-[520px_auto]'>
+    <div className='grid grid-cols-1 lg:grid-cols-[520px_auto] gap-5'>
       <div className='flex flex-col gap-y-5 m-8'>
         <div className='flex items-center justify-between gap-5'>
           <div className='hidden md:flex items-center relative'>
@@ -42,8 +41,8 @@ const Events = () => {
         <EventsActivation />
         <EventsCards />
       </div>
-      <div className='border-l border-gray-300'>
-        <div className='flex flex-col gap-y-5 mx-14 my-10'>
+      <div className='border-l-0 lg:border-l border-gray-300'>
+        <div className='flex flex-col gap-y-5 mx-4 lg:mx-14 my-10'>
           <div className='flex items-start justify-between'>
             <h2 className='font-medium w-[70%] text-2xl'>Verification of documents and photos in the government of GRESCSS</h2>
             <HiOutlineDotsVertical className='m-1' />

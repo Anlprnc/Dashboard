@@ -18,17 +18,17 @@ const EventsActivation = () => {
   ];
 
   return (
-    <div className='flex items-center justify-between'>
-      <div className='flex items-center justify-between gap-4'>
+    <div className='flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between'>
+      <div className='grid grid-cols-2 md:grid-cols-4 md:gap-0 gap-3 flex-grow'>
         {activations.map((activation, index) => (
-          <div key={index} className='flex items-center gap-2 text-sm font-light'>
-            <div className='p-1.5 px-2 rounded-xl bg-gray-100'>
+          <div key={index} className='flex items-center justify-center text-sm font-light'>
+            <div className='p-1.5 px-2 rounded-xl bg-gray-100 text-center'>
               {activation.name} {activation.count}
             </div>
           </div>
         ))}
       </div>
-      <div className='p-1.5 rounded-xl bg-gray-100 text-center'>
+      <div className='p-1.5 rounded-xl bg-gray-100 text-center self-end sm:self-auto'>
         <HiMiniBarsArrowDown size={20} />
       </div>
     </div>
