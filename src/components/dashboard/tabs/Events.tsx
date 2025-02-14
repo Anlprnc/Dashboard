@@ -7,6 +7,9 @@ import { IoIosStarOutline } from 'react-icons/io';
 import EventsCalendar from './EventsCalendar';
 import { HiOutlineDotsVertical } from 'react-icons/hi';
 import EventsMembers from './EventsMembers';
+import EventsDescription from './EventsDescription';
+import { Table } from '@/components/ui/table';
+import EventsAttachments from './EventsAttachments';
 
 const Events = () => {
   const buttonItems = ['Project operations event', 'Verification events'];
@@ -53,6 +56,8 @@ const Events = () => {
           </div>
           <EventsCalendar />
           <EventsMembers />
+          <EventsDescription />
+          <EventsAttachments />
         </div>
       </div>
     </div>
