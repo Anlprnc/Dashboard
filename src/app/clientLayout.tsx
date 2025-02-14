@@ -9,9 +9,9 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
   return (
     <>
       <Navbar />
-      <div className='flex'>
+      <div className='flex h-screen overflow-hidden'>
         <Sidebar activeIcon={activeIcon} setActiveIcon={setActiveIcon} />
-        <main className='flex-1'>{React.cloneElement(children as React.ReactElement<{ activeIcon: string }>, { activeIcon })}</main>
+        <main className='flex-1 overflow-auto'>{React.cloneElement(children as React.ReactElement<{ activeIcon: string }>, { activeIcon })}</main>
       </div>
     </>
   );

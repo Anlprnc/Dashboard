@@ -3,6 +3,9 @@ import { CiSearch } from 'react-icons/ci';
 import { SlArrowDown } from 'react-icons/sl';
 import EventsActivation from './EventsActivation';
 import EventsCards from './EventsCards';
+import { IoIosStarOutline } from 'react-icons/io';
+import EventsCalendar from './EventsCalendar';
+import { HiOutlineDotsVertical } from 'react-icons/hi';
 
 const Events = () => {
   const buttonItems = ['Project operations event', 'Verification events'];
@@ -35,7 +38,21 @@ const Events = () => {
         <EventsActivation />
         <EventsCards />
       </div>
-      <div className='border-l border-gray-300'>2</div>
+      <div className='border-l border-gray-300'>
+        <div className='flex flex-col gap-y-5 mx-14 my-10'>
+          <div className='flex items-start justify-between'>
+            <h2 className='font-medium w-[70%] text-2xl'>Verification of documents and photos in the government of GRESCSS</h2>
+            <HiOutlineDotsVertical className='m-1' />
+          </div>
+          <div className='flex items-center gap-5'>
+            <span className='bg-cyan-100 flex items-center gap-2 text-sm text-cyan-700 p-0.5 px-2 rounded-lg font-medium'>
+              <IoIosStarOutline /> New
+            </span>
+            <span className='opacity-70 text-sm'>Verification event</span>
+          </div>
+          <EventsCalendar />
+        </div>
+      </div>
     </div>
   );
 };
