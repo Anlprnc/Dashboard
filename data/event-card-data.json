@@ -1,0 +1,64 @@
+[
+  {
+    "id": 1,
+    "title": "Preparation of documents for submitting an application to the authorities",
+    "status": "New",
+    "start_date": "24.08.18",
+    "end_date": "25.08.18",
+    "participants": [
+      { "name": "AH", "avatar": "/avatar.jpg" },
+      { "name": "User 1", "avatar": "/avatar.jpg" },
+      { "name": "User 2", "avatar": "/avatar.jpg" }
+    ],
+    "attachments": 4
+  },
+  {
+    "id": 2,
+    "title": "Market research and competitor analysis",
+    "status": "Pending",
+    "start_date": "24.09.10",
+    "end_date": "24.09.20",
+    "participants": [
+      { "name": "BK", "avatar": "/avatar.jpg" },
+      { "name": "User 3", "avatar": "/avatar.jpg" }
+    ],
+    "attachments": 2
+  },
+  {
+    "id": 3,
+    "title": "Finalizing product design and prototyping",
+    "status": "In Progress",
+    "start_date": "24.07.05",
+    "end_date": "24.07.25",
+    "participants": [
+      { "name": "CD", "avatar": "/avatar.jpg" },
+      { "name": "User 4", "avatar": "/avatar.jpg" },
+      { "name": "User 5", "avatar": "/avatar.jpg" }
+    ],
+    "attachments": 6
+  },
+  {
+    "id": 4,
+    "title": "Marketing campaign planning and execution",
+    "status": "Completed",
+    "start_date": "24.06.15",
+    "end_date": "24.07.01",
+    "participants": [
+      { "name": "DE", "avatar": "/avatar.jpg" },
+      { "name": "User 6", "avatar": "/avatar.jpg" }
+    ],
+    "attachments": 3
+  },
+  {
+    "id": 5,
+    "title": "Customer feedback collection and analysis",
+    "status": "Active",
+    "start_date": "24.10.01",
+    "end_date": "24.10.15",
+    "participants": [
+      { "name": "EF", "avatar": "/avatar.jpg" },
+      { "name": "User 7", "avatar": "/avatar.jpg" }
+    ],
+    "attachments": 5
+  }
+]
