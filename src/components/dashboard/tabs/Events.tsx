@@ -6,6 +6,7 @@ import EventsCards from './EventsCards';
 import { IoIosStarOutline } from 'react-icons/io';
 import EventsCalendar from './EventsCalendar';
 import { HiOutlineDotsVertical } from 'react-icons/hi';
+import EventsMembers from './EventsMembers';
 
 const Events = () => {
   const buttonItems = ['Project operations event', 'Verification events'];
@@ -51,6 +52,7 @@ const Events = () => {
             <span className='opacity-70 text-sm'>Verification event</span>
           </div>
           <EventsCalendar />
+          <EventsMembers />
         </div>
       </div>
     </div>
