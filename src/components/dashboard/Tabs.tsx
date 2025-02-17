@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { SlArrowDown } from 'react-icons/sl';
 
-const Tabs = () => {
+const Tabs = ({ activeTab, setActiveTab }: { activeTab: string; setActiveTab: (tab: string) => void }) => {
   const tabItems = ['Activity', 'Inventory', 'Events', 'Documents', 'Overview', 'Reports', 'Photos'];
-  const [activeTab, setActiveTab] = useState(tabItems[0]);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = React.useState(false);
 
   return (
     <div className='w-full mt-4'>

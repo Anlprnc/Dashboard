@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import { IoDocumentAttachOutline } from 'react-icons/io5';
-import eventData from '../../../../data/event-card-data.json';
+import eventData from '../../../../../data/event-card-data.json';
 
 const getStatusStyles = (status: any) => {
   switch (status) {

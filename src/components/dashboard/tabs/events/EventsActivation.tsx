@@ -1,6 +1,6 @@
 import React from 'react';
 import { HiMiniBarsArrowDown } from 'react-icons/hi2';
-import eventData from '../../../../data/event-card-data.json';
+import eventData from '../../../../../data/event-card-data.json';
 
 const EventsActivation = () => {
   const activationCounts = {
